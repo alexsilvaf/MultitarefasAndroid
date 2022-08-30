@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textDirection="firstStrongRtl"
+    tools:context=".Calculadora">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="291dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button8"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="clear"
+                android:text="C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button8"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoMultiplicacao"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button10"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoDivisao"
+                android:text="/" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="291dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button8"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoSete"
+                android:text="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button9"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoOito"
+                android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button10"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoNove"
+                android:text="9" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="291dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button17"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoQuatro"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button23"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoCinco"
+                android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button22"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoSeis"
+                android:text="6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="291dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5">
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button16"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#3C2D17"
+                android:drawableTint="#BFBFBF"
+                android:foregroundTint="#C8C8C8"
+                android:onClick="digitoUm"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button18"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoDois"
+                android:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button19"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoTres"
+                android:text="3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="388dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="digitoPonto"
+                android:text="." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:onClick="digitoPonto"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                style="@android:style/Widget.Material.Button.Small"
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:onClick="digitoPonto"
+                tools:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etOperacao"
+        android:layout_width="390dp"
+        android:layout_height="165dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="esconderTeclado"
+        android:textAlignment="viewEnd"
+        android:textDirection="ltr"
+        android:textSize="96sp"
+        app:flow_horizontalAlign="end"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_optimizationLevel="graph_wrap" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="voltar"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="97dp"
+        android:layout_height="193dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button21"
+            style="@android:style/Widget.Material.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="digitoSubtracao"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="97dp"
+        android:layout_height="194dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4">
+
+        <Button
+            android:id="@+id/button21"
+            style="@android:style/Widget.Material.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="digitoSoma"
+            android:text="+" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.mainproject;
 
+import android.app.Application;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,6 +18,8 @@ public class BancoController {
         long result;
 
         db = banco.getWritableDatabase();
+
+        banco.onUpgrade(db, db.getVersion(), CriarBanco.getVERSAO());
 
         valores = new ContentValues();
         valores.put(CriarBanco.getTITULO(), titulo);

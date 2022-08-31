@@ -32,12 +32,12 @@ public class CriarBanco extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sql = "CREATE TABLE " + TABELA + " ("
-                + ID + " INTEGER PRIMARY KEY AUTO_INCREMENT, "
-                + TITULO + " text, "
-                + AUTOR + " text, "
-                + EDITORA + " text"
-                + ");";
+        sqLiteDatabase.execSQL("CREATE TABLE " + TABELA + " ("
+                + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + TITULO + " TEXT,"
+                + AUTOR + " TEXT, "
+                + EDITORA + " TEXT"
+                + ");");
     }
 
     @Override

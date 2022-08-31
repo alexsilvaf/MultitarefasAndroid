@@ -23,6 +23,12 @@ public class MainProgram extends AppCompatActivity {
         return;
     }
 
+    public void gotoCadastroLivro(View view){
+        Intent newWindow = new Intent(getApplicationContext(), CadastroLivro.class);
+        startActivity(newWindow);
+        return;
+    }
+
     public void sair(View view){
         finish();
     }

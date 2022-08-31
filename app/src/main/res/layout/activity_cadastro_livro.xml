@@ -15,7 +15,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/etEditora"
@@ -26,7 +26,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/etTitulo"
         app:layout_constraintStart_toStartOf="@+id/etTitulo"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
 
     <EditText
         android:id="@+id/etAutor"
@@ -37,26 +37,28 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/etEditora"
         app:layout_constraintStart_toStartOf="@+id/etEditora"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etEditora" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btCadastrarLivro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/etAutor"
         app:layout_constraintStart_toStartOf="@+id/etAutor"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etAutor" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
         android:text="Cadastrar Livro"
         android:textAlignment="center"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

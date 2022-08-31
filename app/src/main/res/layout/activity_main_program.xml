@@ -44,7 +44,8 @@
         android:layout_height="100dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="44dp"
-        android:text="Nada a ver"
+        android:onClick="gotoCadastroLivro"
+        android:text="Cadastrar Livro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 

@@ -6,8 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class CadastroLivro extends Activity {
-    Button cadastroLivro;
+public class Inserir extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
